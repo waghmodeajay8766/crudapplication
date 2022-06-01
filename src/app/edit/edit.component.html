@@ -1,0 +1,31 @@
+<div class="contaner py-5">
+    <section>
+        <form [formGroup]="myform" (ngSubmit)="onSubmitForm()">
+            <div class="formgroup mb-3">
+                <label for="">Name</label>
+                <input type="text" class="form-control" placeholder="Employee Name" formControlName="name">
+              </div>
+              <div class="formgroup ">
+                <label for="" >Employee Age</label>
+                <input type="text" class="form-control"  placeholder="Age" formControlName="age">
+              </div>
+              <div class="formgroup ">
+                <label for="" >Employee ID</label>
+                <input type="text" class="form-control"  placeholder="empId" formControlName="empId">
+              </div>
+              <div class="formgroup mb-3">
+                <label for="" >Branch</label>
+                <input type="text" class="form-control"  placeholder="Branch" formControlName="branch">
+              </div>
+              <div class="formgroup mb-3">
+                <label for="" >Role</label>
+                <input type="text" class="form-control"  placeholder="Role" formControlName="role">
+              </div>
+              <button class="btn btn-primary"  >Update</button>
+
+        </form>
+    </section>
+    
+</div>
+
+

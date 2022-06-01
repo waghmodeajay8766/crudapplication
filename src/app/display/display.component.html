@@ -1,0 +1,27 @@
+<div class="container">
+ 
+    <table class="table table-stripped">
+        <tr>
+            <th>Name</th> 
+            <th>Age </th>
+            <th>Emp Id</th>
+            <th>Branch </th>
+            <th>Role</th>
+             <th>Edit</th>
+             <th>Delete</th> 
+        </tr>
+        <tr *ngFor="let dt of empData">
+            <td >{{dt.name}}</td>
+            <td >{{dt.age}}</td>
+            <td >{{dt.empId}}</td>
+            <td >{{dt.branch}}</td>
+            <td >{{dt.role}}</td>
+           
+           
+            <td><button (click)="onEdit(dt.id,dt)" pButton type="button" label="Update" class="p-button-warning"></button></td>
+            <td> <button (click)="onDelete(dt.id)" pButton type="button" label="Delete " class="p-button-success"></button></td>
+            
+        </tr>
+    </table>
+</div>
+
